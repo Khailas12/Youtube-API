@@ -14,3 +14,8 @@ request = youtube.channels().list(
 
 response = request.execute()
 print(response)
+
+
+# https://www.analyticssteps.com/blogs/how-extract-analyze-youtube-data-using-youtube-api
+
+# https://developers.google.com/youtube/v3/docs/channels#snippet
