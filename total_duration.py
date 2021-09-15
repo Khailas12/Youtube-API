@@ -1,11 +1,19 @@
 from googleapiclient.discovery import build
 from dotenv import load_dotenv
 from datetime import timedelta
+import timeit
+import time
 import re    # regular expression
 import os
-import time
 
 
+start_time = time.time()
+
+def analyzing_time():
+    start = timeit.default_timer()
+    print(f"Analyzing playlist in: {str(start)} Seconds")
+    
+    
 def main():
     load_dotenv()
     YT_API_KEY = os.getenv('YOUTUBE_API_KEY')
@@ -29,7 +37,7 @@ def main():
             maxResults=50, 
             pageToken=nextPageToken
         )
-        print("Analyzing Playlist...\n")
+        analyzing_time()
 
         playlist_response = pl_request.execute()
 
@@ -76,5 +84,5 @@ def main():
     minutes, seconds = divmod(total_seconds, 60)
     hours, minutes = divmod(minutes, 60)
 
-    print(f"Total Time: {hours}H {minutes}M {seconds}S")
+    print(f"\nTotal Time: {hours}H {minutes}M {seconds}S")
     print(f"\nTotal Time: {hours}:{minutes}:{seconds}")

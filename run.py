@@ -1,6 +1,7 @@
 import total_duration as dt
 import time
 
+
 start_time = time.time()
 
 if __name__ == "__main__":
