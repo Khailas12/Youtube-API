@@ -67,6 +67,7 @@ while True:
 
 total_seconds = int(total_seconds)
 
+
 # The divmod() is part of python's standard library which takes two numbers as parameters and gives the quotient and remainder of their division as a tupl
 minutes, seconds = divmod(total_seconds, 60)
 hours, minutes = divmod(minutes, 60)
