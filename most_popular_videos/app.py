@@ -3,9 +3,6 @@ from dotenv import load_dotenv
 import os
 
 
-videos = []
-
-
 load_dotenv()
 YT_API_KEY = os.getenv('YOUTUBE_API_KEY')
 
@@ -13,6 +10,7 @@ youtube = build('youtube', 'v3', developerKey=YT_API_KEY)
 
 nextPageToken = None
 
+videos = []
 
 while True:
     pl_request = youtube.playlistItems().list(
