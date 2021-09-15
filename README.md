@@ -1,5 +1,6 @@
-# Yt-Playlist-time-totalizer
-This will calculate the total time of a YT playlist
+# Youtube-API
+This holds variety of stuffs to dive in with YT-API. 
+
 
 https://www.youtube.com/watch?v=th5_9woFJmk
 
