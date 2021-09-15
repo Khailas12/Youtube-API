@@ -5,7 +5,6 @@ import re    # regular expression
 import os
 import time
 
-start_time = time.time()
 
 def main():
     load_dotenv()
@@ -26,10 +25,11 @@ def main():
     while True:
         pl_request = youtube.playlistItems().list(
             part='contentDetails',
-            playlistId='PLPN21ZkIRg_oQAFzLalMk4H9nFB32ipHG',
+            playlistId="PLPN21ZkIRg_oQAFzLalMk4H9nFB32ipHG",
             maxResults=50, 
             pageToken=nextPageToken
         )
+        print("Analyzing Playlist...\n")
 
         playlist_response = pl_request.execute()
 
@@ -78,9 +78,3 @@ def main():
 
     print(f"Total Time: {hours}H {minutes}M {seconds}S")
     print(f"\nTotal Time: {hours}:{minutes}:{seconds}")
-    
-# main()
-
-end_time = time.time()
-total_time = end_time - start_time
-# print(f'total time {total_time}')
