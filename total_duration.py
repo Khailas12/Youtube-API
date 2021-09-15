@@ -2,12 +2,9 @@ from googleapiclient.discovery import build
 from dotenv import load_dotenv
 from datetime import timedelta
 import timeit
-import time
 import re    # regular expression
 import os
 
-
-start_time = time.time()
 
 def analyzing_time():
     start = timeit.default_timer()
