@@ -7,6 +7,7 @@ import os
 
 # pickle -> Used to save python objects in a file as bytes and load em back into python using that file.
 
+
 def auth_user():
     credentials = None
     if os.path.exists("token.pickle"):

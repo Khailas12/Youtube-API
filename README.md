@@ -1,6 +1,6 @@
 # Youtube-API
 
-This ones pretty much useful for day to day life that helps to calculate the total time of a Yt playlist, Sorted the most popular videos from a playlist and so on.
+This ones pretty much useful for a day to day tasks along with exploring new things to code
 
 These links shows the deep demonstrations of Yt API.
 
