@@ -9,4 +9,4 @@ if __name__ == "__main__":
 
 end_time = time.time()
 total_time = end_time - start_time
-print(f"\nTotal Time taken to calculate: {total_time} Seconds\n")
+print(f"\nFetched Result in {total_time} Seconds\n")
