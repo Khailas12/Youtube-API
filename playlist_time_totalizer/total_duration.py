@@ -6,6 +6,7 @@ import re    # regular expression
 import os
 
 
+
 def analyzing_time():
     start = timeit.default_timer()
     print(f"Analyzing playlist in: {str(start)} Seconds")

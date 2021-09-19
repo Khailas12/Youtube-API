@@ -1,6 +1,7 @@
 # Youtube-API
 
-This ones pretty much useful for a day to day tasks along with exploring new things to code
+This ones pretty much useful for a day to day tasks along with exploring new things to code.
+
 
 These links shows the deep demonstrations of Yt API.
 
